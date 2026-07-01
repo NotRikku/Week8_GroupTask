@@ -22,8 +22,8 @@ const menuItems = [
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Placeholder Cafe</Text>
-      <Text style={styles.subtitle}>Coffee Shop Menu</Text>
+       <Text style={styles.heading}>Terra Mori Cafe</Text>
+      <Text style={styles.subtitle}>Nyan Coffee Menu at your service! + desserts just for you!</Text>
 
       <FlatList
         data={menuItems}
@@ -35,10 +35,11 @@ export default function App() {
             <Text style={styles.name}>{item.name}</Text>
 
             <Button
-             title="View Item"
-             onPress={() =>
-              console.log(
-                `Category: ${item.category}, Item: ${item.name}`
+              title="View Item"
+              color="#634436"
+              onPress={() =>
+                console.log(
+                  `Category: ${item.category}, Item: ${item.name}`
                 )
               }
             />
@@ -53,6 +54,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+    backgroundColor: '#F7F0E4',
   },
   heading: {
     fontSize: 24,
@@ -63,19 +65,19 @@ const styles = StyleSheet.create({
   subtitle: {
   textAlign: 'center',
   fontSize: 16,
-  color: 'gray',
+  color: '#634436',
   marginBottom: 20,
   },
   item: {
     padding: 12,
     marginBottom: 15,
     borderWidth: 1,
-    borderColor: '#ddd',
+    borderColor: '#634436',
     borderRadius: 8,
   },
   category: {
     fontSize: 12,
-    color: 'gray',
+    color: '#ffffff',
   },
   name: {
     fontSize: 18,
